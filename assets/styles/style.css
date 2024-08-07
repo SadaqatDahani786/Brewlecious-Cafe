@@ -1,0 +1,304 @@
+/*
+** ** ============================================================================
+** ** ** THEME FONTS STYLES
+** ** ============================================================================
+*/
+
+/*
+** ** 
+** ** ** Font [Aclonica]
+** **
+*/
+@font-face {
+  font-family: "Aclonica";
+  src: url("../fonts/Aclonica-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*
+  ** ** 
+  ** ** ** Font [Alex Brush]
+  ** **
+  */
+
+@font-face {
+  font-family: "Alex Brush";
+  src: url("../fonts/AlexBrush-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*
+  ** ** 
+  ** ** ** Font [Roboto]
+  ** **
+  */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-MediumItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-BoldItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: bold;
+}
+
+/*
+** ** ============================================================================
+** ** ** THEME COLORS & STYLES
+** ** ============================================================================
+*/
+/*
+** **
+** ** ** Css custom properties
+** **
+*/
+:root {
+  /* Theme Colors */
+  --color-primary: #362023;
+  --color-secondary: #a37c40;
+  --color-tertiary: #f7e1d7;
+
+  /* Accent Colors */
+  --color-success: #0be2bc;
+  --color-danger: #fd5e5e;
+  --color-info: #00b8f2;
+  --color-warn: #ff9900;
+
+  /* Common Colors */
+  --color-black: #000;
+  --color-white: #fff;
+
+  /* Shadows */
+  --shadow-color: 286deg 36% 56%;
+  --shadow-elevation-low: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+    0.4px 0.8px 1px -1.2px hsl(var(--shadow-color) / 0.34),
+    1px 2px 2.5px -2.5px hsl(var(--shadow-color) / 0.34);
+  --shadow-elevation-medium: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
+    0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
+    2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
+    5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
+  --shadow-elevation-high: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+    1.5px 2.9px 3.7px -0.4px hsl(var(--shadow-color) / 0.34),
+    2.7px 5.4px 6.8px -0.7px hsl(var(--shadow-color) / 0.34),
+    4.5px 8.9px 11.2px -1.1px hsl(var(--shadow-color) / 0.34),
+    7.1px 14.3px 18px -1.4px hsl(var(--shadow-color) / 0.34),
+    11.2px 22.3px 28.1px -1.8px hsl(var(--shadow-color) / 0.34),
+    17px 33.9px 42.7px -2.1px hsl(var(--shadow-color) / 0.34),
+    25px 50px 62.9px -2.5px hsl(var(--shadow-color) / 0.34);
+}
+
+/*
+** ** ============================================================================
+** ** ** CSS RESET STYLES
+** ** ============================================================================
+*/
+
+/*
+  ** **
+  ** ** ** Use a more intuitive box model
+  ** **
+  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  ** **
+  ** ** ** Remove default margins
+  ** **
+  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  ** **
+  ** ** ** Allow percentage based heights 
+  ** **
+  */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+/*
+  ** **
+  ** ** ** Accessible line height and improved text rendering
+  ** **
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*
+  ** **
+  ** ** ** Improve media elements' default behaviour
+  ** **
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  width: 100%;
+}
+
+/*
+  ** **
+  ** ** ** Default font family for the code element
+  ** **
+  */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/*
+  ** **
+  ** ** ** Remove default typography from the form inputs
+  ** **
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  ** **
+  ** ** ** Avoid text overflow
+  ** **
+  */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  overflow-wrap: break-word;
+}
+
+/*
+  ** **
+  ** ** ** Create a seperate stacking context for the root element
+  ** **
+  */
+#root {
+  isolation: isolate;
+}
+
+/*
+** ** ============================================================================
+** ** ** GLOBAL
+** ** ============================================================================
+*/
+html {
+  font-family: Roboto;
+  font-size: 62.5%;
+  background-color: var(--color-tertiary);
+}
+
+/*
+** ** ============================================================================
+** ** ** TYPOGRAPHY
+** ** ============================================================================
+*/
+
+/*
+** **
+** ** ** Headings
+** **
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Aclonica;
+}
+
+h1 {
+  font-size: 4.2rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h2::first-letter {
+  font-family: Alex Brush;
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2.9rem;
+}
+
+h4 {
+  font-size: 2.6rem;
+}
+
+h5 {
+  font-size: 2.1rem;
+}
+
+h6 {
+  font-size: 1.8rem;
+}
+
+/*
+** **
+** ** ** Body text
+** **
+*/
+p {
+  font-size: 1.6rem;
+}
+
+p.lead {
+  font-size: 1.8rem;
+}
