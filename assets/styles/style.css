@@ -103,7 +103,7 @@
   --color-white: #fff;
 
   /* Shadows */
-  --shadow-color: 286deg 36% 56%;
+  --shadow-color: 0, 100%, 0%;
   --shadow-elevation-low: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
     0.4px 0.8px 1px -1.2px hsl(var(--shadow-color) / 0.34),
     1px 2px 2.5px -2.5px hsl(var(--shadow-color) / 0.34);
@@ -259,6 +259,7 @@ h4,
 h5,
 h6 {
   font-family: Aclonica;
+  font-weight: normal;
 }
 
 h1 {
@@ -268,6 +269,7 @@ h1 {
 
 h2 {
   font-size: 3.2rem;
+  line-height: 1.16em;
 }
 
 h2::first-letter {
@@ -276,7 +278,8 @@ h2::first-letter {
 }
 
 h3 {
-  font-size: 2.9rem;
+  font-size: 2.8rem;
+  line-height: 1.16em;
 }
 
 h4 {
@@ -366,4 +369,85 @@ section.hero {
 
 .hero__intro__subtitle {
   font-size: 2.4rem;
+}
+
+/*
+** ** ============================================================================
+** ** ** SECTION [COFFEE PROCESS]
+** ** ============================================================================
+*/
+section.coffee-process {
+  --space: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space) 0;
+  gap: var(--space);
+}
+
+.coffee-process__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  text-align: center;
+}
+
+.coffee-process__intro__image {
+  max-width: 320px;
+}
+
+.coffee-process__intro__title {
+  max-width: 700px;
+}
+
+.showcase-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space);
+}
+
+.showcase {
+  max-width: 1200px;
+  display: flex;
+  gap: 90px;
+}
+
+.showcase > div {
+  flex: 1;
+  height: 800px;
+}
+
+.showcase__image,
+.showcase__content__image {
+  border-radius: 8px;
+  box-shadow: var(--shadow-elevation-high);
+  overflow: hidden;
+}
+
+.showcase__image img,
+.showcase__content__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.showcase__content__image {
+  height: 300px;
+}
+
+.showcase__content {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+}
+
+.showcase__content__header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.showcase__content__image {
+  flex: 1;
 }
