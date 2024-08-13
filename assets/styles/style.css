@@ -312,6 +312,9 @@ p.lead {
 ** ** ** COMPONENTS
 ** ** ============================================================================
 */
+/*
+** Button
+*/
 button.btn {
   display: block;
   width: fit-content;
@@ -338,8 +341,56 @@ button.btn--lg {
   padding: 20px 32px;
 }
 
+button.btn--full-width {
+  width: 100%;
+}
+
 button.btn--primary {
   background-color: var(--color-primary);
+}
+
+/*
+** Button Group
+*/
+div.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid var(--color-primary);
+}
+
+/*
+** Icon Button
+*/
+button.icon-button {
+  --size: 56px;
+  width: var(--size);
+  height: var(--size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color-primary);
+  border-radius: var(--size);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+button.icon-button--active {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+button.icon-button--active img {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(172deg)
+    brightness(106%) contrast(105%);
+}
+
+/*
+** Divider
+*/
+hr.divider {
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 /*
@@ -450,4 +501,128 @@ section.coffee-process {
 
 .showcase__content__image {
   flex: 1;
+}
+
+/*
+** ** ============================================================================
+** ** ** SECTION [TOP COFFEE]
+** ** ============================================================================
+*/
+section.best-coffee {
+  --space: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space);
+  background-color: var(--color-secondary);
+  padding: var(--space) 0;
+  min-height: 100%;
+}
+
+.cards-wrap {
+  width: calc(100% - 48px * 2);
+  display: flex;
+  justify-content: space-evenly;
+  gap: 48px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 460px;
+  background: var(--color-white);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card__image {
+  height: 240px;
+}
+
+.card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__header,
+.card__body,
+.card__footer {
+  padding: 24px 24px;
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card__body__primary-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card__body__secondary-details {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.card__body__secondary-details > p {
+  font-weight: bold;
+}
+
+.card__body__secondary-details .size {
+  display: flex;
+  gap: 24px;
+}
+
+.card__body__secondary-details .size .size__cup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.card__body__secondary-details .size .size__cup--lg img {
+  width: 48px;
+}
+
+.card__body__secondary-details .size .size__cup--md img {
+  width: 32px;
+}
+
+.card__body__secondary-details .size .size__cup--sm img {
+  width: 24px;
+}
+
+.card__body input {
+  display: none;
+}
+
+.card__body label {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.card__body input:checked + label {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.card__body input:checked + label img {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(172deg)
+    brightness(106%) contrast(105%);
 }
