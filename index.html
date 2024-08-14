@@ -5,361 +5,462 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brewlecious Cafe</title>
     <link rel="stylesheet" href="./assets/styles/style.css" />
-    <script src="assets/scripts/script.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script defer src="assets/scripts/script.js"></script>
   </head>
   <body>
-    <!-- Section Hero Start -->
-    <section class="hero">
-      <div class="hero__intro">
-        <h1 class="hero__intro__title">Welcome to Brewlecious Cafe</h1>
-        <p class="hero__intro__subtitle">— Where every sip is pure delight!</p>
-        <button class="btn btn--primary">PICK A COFFEE</button>
+    <!-- Header Start -->
+    <header class="header">
+      <div class="alert">
+        <p>FREE DELIVERY ON ORDERS ABOVE 20$ — START ORDERING NOW!</p>
+        <button
+          class="icon-button icon-button--sm icon-button--reverse icon-button--plain"
+        >
+          <i data-feather="x"></i>
+        </button>
       </div>
-    </section>
-    <!-- Section Hero End -->
+      <nav class="navbar">
+        <div class="logo"><h3>Brewlecious Cafe</h3></div>
+        <ul class="navbar__navlinks">
+          <li><a class="navbar__navlinks__navlink" href="/">Home</a></li>
+          <li>
+            <a class="navbar__navlinks__navlink" href="cafe.html">Cafe</a>
+          </li>
+          <li>
+            <a class="navbar__navlinks__navlink" href="about.html">About</a>
+          </li>
+          <li>
+            <a class="navbar__navlinks__navlink" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="navbar__icon-buttons">
+          <button class="icon-button">
+            <i data-feather="user"></i>
+          </button>
+          <button class="icon-button">
+            <i data-feather="shopping-bag"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- Header End -->
 
-    <!-- Section Coffee-Process Start -->
-    <section class="coffee-process">
-      <div class="coffee-process__intro">
-        <img
-          class="coffee-process__intro__image"
-          src="./assets/images/hugging-coffee.svg"
-          alt="An illustration of a person hugging a giant coffee cup."
-        />
-        <h2 class="coffee-process__intro__title">
-          From Bean To Brew Crafting The Finest Premium Coffee Experience
-        </h2>
-      </div>
-      <div class="showcase-wrapper">
-        <div class="showcase">
-          <div class="showcase__image">
-            <img
-              src="./assets/images/coffee-process-1.jpg"
-              alt="An image of coffee beans being handpicked."
-            />
-          </div>
-          <div class="showcase__content">
-            <div class="showcase__content__header">
-              <h3>
-                Indulge in Perfection—Because Great Coffee Deserves the Best
-                Beans!
-              </h3>
-              <p class="lead">
-                This exceptional blend is crafted from the finest handpicked
-                beans sourced from renowned coffee-growing regions.
-              </p>
-            </div>
-            <div class="showcase__content__image">
+    <!-- Main Start -->
+    <main>
+      <!-- Section Hero Start -->
+      <section class="hero">
+        <div class="hero__intro">
+          <h1 class="hero__intro__title">Welcome to Brewlecious Cafe</h1>
+          <p class="hero__intro__subtitle">
+            — Where every sip is pure delight!
+          </p>
+          <button class="btn btn--primary">PICK A COFFEE</button>
+        </div>
+      </section>
+      <!-- Section Hero End -->
+
+      <!-- Section Coffee-Process Start -->
+      <section class="coffee-process">
+        <div class="coffee-process__intro">
+          <img
+            class="coffee-process__intro__image"
+            src="./assets/images/hugging-coffee.svg"
+            alt="An illustration of a person hugging a giant coffee cup."
+          />
+          <h2 class="coffee-process__intro__title">
+            From Bean To Brew Crafting The Finest Premium Coffee Experience
+          </h2>
+        </div>
+        <div class="showcase-wrapper">
+          <div class="showcase">
+            <div class="showcase__image">
               <img
-                src="./assets/images/coffee-process-2.jpg"
-                alt="An image of a bag full of dark brown coffee beans."
+                src="./assets/images/coffee-process-1.jpg"
+                alt="An image of coffee beans being handpicked."
               />
             </div>
-          </div>
-        </div>
-        <div class="showcase">
-          <div class="showcase__content">
-            <div class="showcase__content__header">
-              <h3>
-                Crafted to Perfection for a Connoisseur's Delight in Every Sip!
-              </h3>
-              <p class="lead">
-                Roasted to perfection, this coffee offers an unparalleled
-                experience for true connoisseurs, making every sip a celebration
-                of quality and craftsmanship.
-              </p>
-            </div>
-            <div class="showcase__content__image">
-              <img
-                src="./assets/images/coffee-roasting-2.jpg"
-                alt="An image of coffee beans being roasted with small equipment and a magnifying glass."
-              />
-            </div>
-          </div>
-          <div class="showcase__image">
-            <img
-              src="./assets/images/coffee-roasting-1.jpg"
-              alt="An image of coffee beans being roasted in a giant machinery of some sort."
-            />
-          </div>
-        </div>
-        <div class="showcase">
-          <div class="showcase__image">
-            <img
-              src="./assets/images/coffee-flavors-1.jpg"
-              alt="Top down view of a coffee cup with pattern of dove on it made with cream."
-            />
-          </div>
-          <div class="showcase__content">
-            <div class="showcase__content__header">
-              <h3>A Symphony of Rich Flavors and Velvety Smoothness!</h3>
-              <p class="lead">
-                Each cup of Brewmaster's Reserve delivers a rich, full-bodied
-                flavor with subtle notes of chocolate and caramel, perfectly
-                balanced with a smooth, velvety finish.
-              </p>
-            </div>
-            <div class="showcase__content__image">
-              <img
-                src="./assets/images/coffee-flavors-2.jpg"
-                alt="An image of a cup full of flavorful coffee with cream on top of it."
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Section Coffee-Process End -->
-    <!-- Section Best Coffee Start -->
-    <section class="best-coffee">
-      <h2>The Best Of Brewlecious Cafe</h2>
-      <div class="cards-wrap">
-        <div class="card">
-          <div class="card__image">
-            <img
-              src="/assets/images/coffee-cappucchino.avif"
-              alt="an image of cup filled with coffee cappucchino"
-            />
-          </div>
-          <div class="card__header">
-            <h3>Cappuccino</h3>
-            <h3>$4.30</h3>
-          </div>
-          <hr class="divider" />
-          <div class="card__body">
-            <div class="card__body__primary-details">
-              <p class="lead">Non Diary Vanilla Sweet Cream</p>
-              <p class="lead">Mild Warm</p>
-              <p class="lead">Regular Form</p>
-              <p class="lead">1/2 Decaf Espresso Roast</p>
-              <p class="lead">1x Expresso Shot</p>
-            </div>
-            <hr class="divider" />
-            <div class="card__body__secondary-details">
-              <p class="lead">Size</p>
-              <div class="size">
-                <div class="size__cup size__cup--sm">
-                  <button class="icon-button">
-                    <input
-                      type="radio"
-                      name="cup-size-01"
-                      id="cup-size-01-sm"
-                    />
-                    <label for="cup-size-01-sm">
-                      <img
-                        src="/assets/images/coffee-cup.svg"
-                        alt="an icon of small size coffee cup"
-                      />
-                    </label>
-                  </button>
-                  <p>(240ml)</p>
-                </div>
-
-                <div class="size__cup size__cup--md">
-                  <button class="icon-button">
-                    <input
-                      type="radio"
-                      name="cup-size-01"
-                      id="cup-size-01-md"
-                    />
-                    <label for="cup-size-01-md"
-                      ><img
-                        src="/assets/images/coffee-cup.svg"
-                        alt="an icon of medium size coffee cup"
-                    /></label>
-                  </button>
-                  <p>(355ml)</p>
-                </div>
-
-                <div class="size__cup size__cup--lg">
-                  <button class="icon-button">
-                    <input
-                      type="radio"
-                      name="cup-size-01"
-                      id="cup-size-01-lg"
-                    />
-                    <label for="cup-size-01-lg"
-                      ><img
-                        src="/assets/images/coffee-cup.svg"
-                        alt="an icon of large size coffee cup"
-                      />
-                    </label>
-                  </button>
-                  <p>(475ml)</p>
-                </div>
+            <div class="showcase__content">
+              <div class="showcase__content__header">
+                <h3>
+                  Indulge in Perfection—Because Great Coffee Deserves the Best
+                  Beans!
+                </h3>
+                <p class="lead">
+                  This exceptional blend is crafted from the finest handpicked
+                  beans sourced from renowned coffee-growing regions.
+                </p>
+              </div>
+              <div class="showcase__content__image">
+                <img
+                  src="./assets/images/coffee-process-2.jpg"
+                  alt="An image of a bag full of dark brown coffee beans."
+                />
               </div>
             </div>
           </div>
-          <hr class="divider" />
-          <div class="card__footer">
-            <button class="btn btn--full-width btn--primary">
-              Add to order
-            </button>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card__image">
-            <img
-              src="/assets/images/coffee-latte.avif"
-              alt="an image of a cup filled latte coffee"
-            />
-          </div>
-          <div class="card__header">
-            <h3>Cafe Latte</h3>
-            <h3>$6.40</h3>
-          </div>
-          <hr class="divider" />
-          <div class="card__body">
-            <div class="card__body__primary-details">
-              <p class="lead">2% Milk</p>
-              <p class="lead">Steaming Hot</p>
-              <p class="lead">Milk Foam</p>
-              <p class="lead">Signature Espresso Roast</p>
-              <p class="lead">2x Expresso Shot</p>
+          <div class="showcase">
+            <div class="showcase__content">
+              <div class="showcase__content__header">
+                <h3>
+                  Crafted to Perfection for a Connoisseur's Delight in Every
+                  Sip!
+                </h3>
+                <p class="lead">
+                  Roasted to perfection, this coffee offers an unparalleled
+                  experience for true connoisseurs, making every sip a
+                  celebration of quality and craftsmanship.
+                </p>
+              </div>
+              <div class="showcase__content__image">
+                <img
+                  src="./assets/images/coffee-roasting-2.jpg"
+                  alt="An image of coffee beans being roasted with small equipment and a magnifying glass."
+                />
+              </div>
             </div>
-            <hr class="divider" />
-            <div class="card__body__secondary-details">
-              <p class="lead">Size</p>
-              <div class="size">
-                <div class="size__cup size__cup--sm">
-                  <button class="icon-button">
-                    <input
-                      type="radio"
-                      name="cup-size-02"
-                      id="cup-size-02-sm"
-                    />
-                    <label for="cup-size-02-sm">
-                      <img
-                        src="/assets/images/coffee-cup.svg"
-                        alt="an icon of small size coffee cup"
-                      />
-                    </label>
-                  </button>
-                  <p>(240ml)</p>
-                </div>
-
-                <div class="size__cup size__cup--md">
-                  <button class="icon-button">
-                    <input
-                      type="radio"
-                      name="cup-size-02"
-                      id="cup-size-02-md"
-                    />
-                    <label for="cup-size-02-md"
-                      ><img
-                        src="/assets/images/coffee-cup.svg"
-                        alt="an icon of medium size coffee cup"
-                    /></label>
-                  </button>
-                  <p>(355ml)</p>
-                </div>
-
-                <div class="size__cup size__cup--lg">
-                  <button class="icon-button">
-                    <input
-                      type="radio"
-                      name="cup-size-02"
-                      id="cup-size-02-lg"
-                    />
-                    <label for="cup-size-02-lg"
-                      ><img
-                        src="/assets/images/coffee-cup.svg"
-                        alt="an icon of large size coffee cup"
-                      />
-                    </label>
-                  </button>
-                  <p>(475ml)</p>
-                </div>
+            <div class="showcase__image">
+              <img
+                src="./assets/images/coffee-roasting-1.jpg"
+                alt="An image of coffee beans being roasted in a giant machinery of some sort."
+              />
+            </div>
+          </div>
+          <div class="showcase">
+            <div class="showcase__image">
+              <img
+                src="./assets/images/coffee-flavors-1.jpg"
+                alt="Top down view of a coffee cup with pattern of dove on it made with cream."
+              />
+            </div>
+            <div class="showcase__content">
+              <div class="showcase__content__header">
+                <h3>A Symphony of Rich Flavors and Velvety Smoothness!</h3>
+                <p class="lead">
+                  Each cup of Brewmaster's Reserve delivers a rich, full-bodied
+                  flavor with subtle notes of chocolate and caramel, perfectly
+                  balanced with a smooth, velvety finish.
+                </p>
+              </div>
+              <div class="showcase__content__image">
+                <img
+                  src="./assets/images/coffee-flavors-2.jpg"
+                  alt="An image of a cup full of flavorful coffee with cream on top of it."
+                />
               </div>
             </div>
           </div>
-          <hr class="divider" />
-          <div class="card__footer">
-            <button class="btn btn--full-width btn--primary">
-              Add to order
-            </button>
-          </div>
         </div>
+      </section>
+      <!-- Section Coffee-Process End -->
 
-        <div class="card">
-          <div class="card__image">
-            <img
-              src="/assets/images/coffee-americano.avif"
-              alt="an image of a cup filled with coffee americano"
-            />
-          </div>
-          <div class="card__header">
-            <h3>Cafe Americano</h3>
-            <h3>$6.99</h3>
-          </div>
-          <hr class="divider" />
-          <div class="card__body">
-            <div class="card__body__primary-details">
-              <p class="lead">Water</p>
-              <p class="lead">Boiling Hot</p>
-              <p class="lead">No Foam</p>
-              <p class="lead">Signature Espresso Roast</p>
-              <p class="lead">3x Expresso Shot</p>
+      <!-- Section Best Coffee Start -->
+      <section class="best-coffee">
+        <h2>The Best Of Brewlecious Cafe</h2>
+        <div class="cards-wrap">
+          <div class="card">
+            <div class="card__image">
+              <img
+                src="/assets/images/coffee-cappucchino.avif"
+                alt="an image of cup filled with coffee cappucchino"
+              />
+            </div>
+            <div class="card__header">
+              <h3>Cappuccino</h3>
+              <h3>$4.30</h3>
             </div>
             <hr class="divider" />
-            <div class="card__body__secondary-details">
-              <p class="lead">Size</p>
-              <div class="size">
-                <div class="size__cup size__cup--sm">
-                  <button class="icon-button">
-                    <input
-                      checked
-                      type="radio"
-                      name="cup-size"
-                      id="cup-size-03-sm"
-                    />
-                    <label for="cup-size-03-sm">
-                      <img
-                        src="/assets/images/coffee-cup.svg"
-                        alt="an icon of small size coffee cup"
+            <div class="card__body">
+              <div class="card__body__primary-details">
+                <p class="lead">Non Diary Vanilla Sweet Cream</p>
+                <p class="lead">Mild Warm</p>
+                <p class="lead">Regular Form</p>
+                <p class="lead">1/2 Decaf Espresso Roast</p>
+                <p class="lead">1x Expresso Shot</p>
+              </div>
+              <hr class="divider" />
+              <div class="card__body__secondary-details">
+                <p class="lead">Size</p>
+                <div class="size">
+                  <div class="size__cup size__cup--sm">
+                    <button class="icon-button">
+                      <input
+                        type="radio"
+                        name="cup-size-01"
+                        id="cup-size-01-sm"
                       />
-                    </label>
-                  </button>
-                  <p>(240ml)</p>
-                </div>
+                      <label for="cup-size-01-sm">
+                        <img
+                          src="/assets/images/coffee-cup.svg"
+                          alt="an icon of small size coffee cup"
+                        />
+                      </label>
+                    </button>
+                    <p>(240ml)</p>
+                  </div>
 
-                <div class="size__cup size__cup--md">
-                  <button class="icon-button">
-                    <input type="radio" name="cup-size" id="cup-size-03-md" />
-                    <label for="cup-size-03-md"
-                      ><img
-                        src="/assets/images/coffee-cup.svg"
-                        alt="an icon of medium size coffee cup"
-                    /></label>
-                  </button>
-                  <p>(355ml)</p>
-                </div>
-
-                <div class="size__cup size__cup--lg">
-                  <button class="icon-button">
-                    <input type="radio" name="cup-size" id="cup-size-03-lg" />
-                    <label for="cup-size-03-lg"
-                      ><img
-                        src="/assets/images/coffee-cup.svg"
-                        alt="an icon of large size coffee cup"
+                  <div class="size__cup size__cup--md">
+                    <button class="icon-button">
+                      <input
+                        type="radio"
+                        name="cup-size-01"
+                        id="cup-size-01-md"
                       />
-                    </label>
-                  </button>
-                  <p>(475ml)</p>
+                      <label for="cup-size-01-md"
+                        ><img
+                          src="/assets/images/coffee-cup.svg"
+                          alt="an icon of medium size coffee cup"
+                      /></label>
+                    </button>
+                    <p>(355ml)</p>
+                  </div>
+
+                  <div class="size__cup size__cup--lg">
+                    <button class="icon-button">
+                      <input
+                        type="radio"
+                        name="cup-size-01"
+                        id="cup-size-01-lg"
+                      />
+                      <label for="cup-size-01-lg"
+                        ><img
+                          src="/assets/images/coffee-cup.svg"
+                          alt="an icon of large size coffee cup"
+                        />
+                      </label>
+                    </button>
+                    <p>(475ml)</p>
+                  </div>
                 </div>
               </div>
             </div>
+            <hr class="divider" />
+            <div class="card__footer">
+              <button class="btn btn--full-width btn--primary">
+                Add to order
+              </button>
+            </div>
           </div>
-          <hr class="divider" />
-          <div class="card__footer">
-            <button class="btn btn--full-width btn--primary">
-              Add to order
+
+          <div class="card">
+            <div class="card__image">
+              <img
+                src="/assets/images/coffee-latte.avif"
+                alt="an image of a cup filled latte coffee"
+              />
+            </div>
+            <div class="card__header">
+              <h3>Cafe Latte</h3>
+              <h3>$6.40</h3>
+            </div>
+            <hr class="divider" />
+            <div class="card__body">
+              <div class="card__body__primary-details">
+                <p class="lead">2% Milk</p>
+                <p class="lead">Steaming Hot</p>
+                <p class="lead">Milk Foam</p>
+                <p class="lead">Signature Espresso Roast</p>
+                <p class="lead">2x Expresso Shot</p>
+              </div>
+              <hr class="divider" />
+              <div class="card__body__secondary-details">
+                <p class="lead">Size</p>
+                <div class="size">
+                  <div class="size__cup size__cup--sm">
+                    <button class="icon-button">
+                      <input
+                        type="radio"
+                        name="cup-size-02"
+                        id="cup-size-02-sm"
+                      />
+                      <label for="cup-size-02-sm">
+                        <img
+                          src="/assets/images/coffee-cup.svg"
+                          alt="an icon of small size coffee cup"
+                        />
+                      </label>
+                    </button>
+                    <p>(240ml)</p>
+                  </div>
+
+                  <div class="size__cup size__cup--md">
+                    <button class="icon-button">
+                      <input
+                        type="radio"
+                        name="cup-size-02"
+                        id="cup-size-02-md"
+                      />
+                      <label for="cup-size-02-md"
+                        ><img
+                          src="/assets/images/coffee-cup.svg"
+                          alt="an icon of medium size coffee cup"
+                      /></label>
+                    </button>
+                    <p>(355ml)</p>
+                  </div>
+
+                  <div class="size__cup size__cup--lg">
+                    <button class="icon-button">
+                      <input
+                        type="radio"
+                        name="cup-size-02"
+                        id="cup-size-02-lg"
+                      />
+                      <label for="cup-size-02-lg"
+                        ><img
+                          src="/assets/images/coffee-cup.svg"
+                          alt="an icon of large size coffee cup"
+                        />
+                      </label>
+                    </button>
+                    <p>(475ml)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="divider" />
+            <div class="card__footer">
+              <button class="btn btn--full-width btn--primary">
+                Add to order
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__image">
+              <img
+                src="/assets/images/coffee-americano.avif"
+                alt="an image of a cup filled with coffee americano"
+              />
+            </div>
+            <div class="card__header">
+              <h3>Cafe Americano</h3>
+              <h3>$6.99</h3>
+            </div>
+            <hr class="divider" />
+            <div class="card__body">
+              <div class="card__body__primary-details">
+                <p class="lead">Water</p>
+                <p class="lead">Boiling Hot</p>
+                <p class="lead">No Foam</p>
+                <p class="lead">Signature Espresso Roast</p>
+                <p class="lead">3x Expresso Shot</p>
+              </div>
+              <hr class="divider" />
+              <div class="card__body__secondary-details">
+                <p class="lead">Size</p>
+                <div class="size">
+                  <div class="size__cup size__cup--sm">
+                    <button class="icon-button">
+                      <input
+                        checked
+                        type="radio"
+                        name="cup-size"
+                        id="cup-size-03-sm"
+                      />
+                      <label for="cup-size-03-sm">
+                        <img
+                          src="/assets/images/coffee-cup.svg"
+                          alt="an icon of small size coffee cup"
+                        />
+                      </label>
+                    </button>
+                    <p>(240ml)</p>
+                  </div>
+
+                  <div class="size__cup size__cup--md">
+                    <button class="icon-button">
+                      <input type="radio" name="cup-size" id="cup-size-03-md" />
+                      <label for="cup-size-03-md"
+                        ><img
+                          src="/assets/images/coffee-cup.svg"
+                          alt="an icon of medium size coffee cup"
+                      /></label>
+                    </button>
+                    <p>(355ml)</p>
+                  </div>
+
+                  <div class="size__cup size__cup--lg">
+                    <button class="icon-button">
+                      <input type="radio" name="cup-size" id="cup-size-03-lg" />
+                      <label for="cup-size-03-lg"
+                        ><img
+                          src="/assets/images/coffee-cup.svg"
+                          alt="an icon of large size coffee cup"
+                        />
+                      </label>
+                    </button>
+                    <p>(475ml)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="divider" />
+            <div class="card__footer">
+              <button class="btn btn--full-width btn--primary">
+                Add to order
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section Best Coffee End -->
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+      <h3>Brewlecious Cafe</h3>
+      <div class="footer__content">
+        <div class="footer__content__col">
+          <p>
+            Proudly serving our loyal customers since 2001, we are present in
+            over 12 states across the USA, with our headquarters located in New
+            York.
+          </p>
+          <div class="flex-wrap">
+            <p><i data-feather="clock"></i></p>
+            <p>Mon - Sun, 7AM to 11PM</p>
+          </div>
+          <div class="flex-wrap">
+            <p><i data-feather="phone"></i></p>
+            <p>(+1) 335 204 4456</p>
+          </div>
+          <div class="flex-wrap">
+            <button class="icon-button">
+              <i data-feather="facebook"></i>
+            </button>
+            <button class="icon-button">
+              <i data-feather="instagram"></i>
+            </button>
+            <button class="icon-button">
+              <i data-feather="twitter"></i>
             </button>
           </div>
+        </div>
+        <div class="footer__content__col">
+          <h4>Useful Links</h4>
+          <ul class="navlinks">
+            <li><a href="">Home</a></li>
+            <li><a href="">Cafe</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__content__col">
+          <h4>Subscribe to our newsletter for daily deals and promotions!</h4>
+          <input type="email" name="email" placeholder="Your Email" />
         </div>
       </div>
-    </section>
-    <!-- Section Best Coffee End -->
+      <div class="footer__secondary-links">
+        <ul class="navlinks">
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <div class="copyright-text">
+        <p>&copy; Brewlecious Cafe 2001 - 2024. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- Footer End -->
   </body>
 </html>

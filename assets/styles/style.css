@@ -284,6 +284,7 @@ h3 {
 
 h4 {
   font-size: 2.6rem;
+  line-height: 1.14em;
 }
 
 h5 {
@@ -305,6 +306,162 @@ p {
 
 p.lead {
   font-size: 1.8rem;
+}
+
+/*
+** ** ============================================================================
+** ** ** HEADER
+** ** ============================================================================
+*/
+header.header {
+  width: 100%;
+  position: fixed;
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.header .alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid var(--color-white);
+}
+
+.header .alert p {
+  font-size: 12px;
+}
+
+.header .alert button {
+  position: absolute;
+  right: 48px;
+}
+
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 48px;
+}
+
+header .navbar > :first-child,
+header .navbar > :last-child {
+  flex: 0 1 25%;
+  display: flex;
+}
+
+header .navbar > :last-child {
+  justify-content: flex-end;
+}
+
+.header .navbar .navbar__navlinks {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  list-style: none;
+}
+
+.header .navbar .navbar__navlinks .navbar__navlinks__navlink {
+  font-size: 20px;
+  color: inherit;
+  font-family: "Aclonica";
+  text-decoration: none;
+}
+
+.header .navbar .navbar__navlinks .navbar__navlinks__navlink:hover {
+  color: var(--color-tertiary);
+}
+
+.header .navbar .navbar__icon-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+/*
+** ** ============================================================================
+** ** ** FOOTER
+** ** ============================================================================
+*/
+footer.footer {
+  width: 100%;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+}
+
+.footer .copyright-text {
+  border-top: 1px solid var(--color-white);
+  height: max-content;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 -48px -48px -48px;
+  padding: 16px 48px;
+}
+
+.footer .footer__secondary-links {
+  align-self: flex-end;
+}
+
+.footer .footer__secondary-links .navlinks {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+}
+
+.footer .footer__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 56px;
+}
+
+.footer .footer__content__col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer .footer__content__col:nth-child(1),
+.footer .footer__content__col:nth-child(2) {
+  flex: 0 1 30%;
+}
+
+.footer .footer__content__col:nth-child(3) {
+  flex: 0 1 40%;
+}
+
+.footer .footer__content__col .navlinks {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+}
+
+.footer .navlinks a {
+  font-size: 1.6rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer .navlinks a:hover {
+  color: var(--color-secondary);
+}
+
+.footer .footer__content__col h4 {
+  text-transform: uppercase;
+  max-width: 540px;
+}
+
+.footer .footer__content__col input {
+  height: 48px;
+  padding: 24px 16px;
+  border-radius: 4px;
+  font-size: 1.6rem;
 }
 
 /*
@@ -376,6 +533,19 @@ button.icon-button {
   cursor: pointer;
 }
 
+button.icon-button--reverse {
+  color: var(--color-white);
+  background-color: var(--color-black);
+}
+
+button.icon-button--plain {
+  background: transparent;
+}
+
+button.icon-button--sm {
+  --size: 24px;
+}
+
 button.icon-button--active {
   background-color: var(--color-primary);
   color: white;
@@ -394,13 +564,22 @@ hr.divider {
 }
 
 /*
+** Flexbox
+*/
+div.flex-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/*
 ** ** ============================================================================
 ** ** ** SECTION [HERO]
 ** ** ============================================================================
 */
 section.hero {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-image: url("../images/hero-bg.jpg");
   background-position: center;
   background-size: cover;
@@ -516,7 +695,6 @@ section.best-coffee {
   gap: var(--space);
   background-color: var(--color-secondary);
   padding: var(--space) 0;
-  min-height: 100%;
 }
 
 .cards-wrap {
