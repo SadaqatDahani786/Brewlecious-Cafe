@@ -22,4 +22,6 @@ select(".header .alert button").addEventListener("click", (e) => {
   e.preventDefault();
 
   select(".header .alert").style.display = "none";
+
+  select("aside.aside").style.marginTop = "104px";
 });
