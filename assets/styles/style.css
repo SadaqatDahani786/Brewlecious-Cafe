@@ -315,9 +315,10 @@ p.lead {
 */
 header.header {
   width: 100%;
-  position: fixed;
   background: var(--color-primary);
   color: var(--color-white);
+  position: fixed;
+  z-index: 10;
 }
 
 .header .alert {
@@ -817,10 +818,14 @@ aside.aside {
   height: 315%;
   background: var(--color-secondary);
   color: var(--color-primary);
+  margin-top: 155px;
   padding: 48px;
-  position: fixed;
-  left: 0;
-  top: 155px;
+  float: left;
+}
+
+.aside .wrapper {
+  position: sticky;
+  top: calc(155px + 48px);
   display: flex;
   flex-direction: column;
   gap: 80px;
