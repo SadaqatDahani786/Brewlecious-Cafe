@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brewlecious Cafe - About</title>
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script defer src="assets/scripts/script.js"></script>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header class="header">
+      <div class="alert">
+        <p>FREE DELIVERY ON ORDERS ABOVE 20$ — START ORDERING NOW!</p>
+        <button
+          class="icon-button icon-button--sm icon-button--reverse icon-button--plain"
+        >
+          <i data-feather="x"></i>
+        </button>
+      </div>
+      <nav class="navbar">
+        <div class="logo"><h3>Brewlecious Cafe</h3></div>
+        <ul class="navbar__navlinks">
+          <li><a class="navbar__navlinks__navlink" href="/">Home</a></li>
+          <li>
+            <a class="navbar__navlinks__navlink" href="cafe.html">Cafe</a>
+          </li>
+          <li>
+            <a class="navbar__navlinks__navlink" href="about.html">About</a>
+          </li>
+          <li>
+            <a class="navbar__navlinks__navlink" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="navbar__icon-buttons">
+          <button class="icon-button">
+            <i data-feather="user"></i>
+          </button>
+          <button class="icon-button">
+            <i data-feather="shopping-bag"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Start -->
+    <main class="main main--contact">
+      <div class="contact-info">
+        <h2>Contact Info</h2>
+        <div class="contact-info__wrapper">
+          <div class="contact-info__details">
+            <div class="contact-info__details__item">
+              <p class="lead">Headquarters</p>
+              <p>340 6th Ave, New York, NY 10011 USA</p>
+            </div>
+            <div class="contact-info__details__item">
+              <p class="lead">Timing</p>
+              <p>Mon - Sun, 7AM - 11PM</p>
+            </div>
+            <div class="contact-info__details__item">
+              <p class="lead">Email</p>
+              <p>info@brewleciouscafe.com</p>
+            </div>
+            <div class="contact-info__details__item">
+              <p class="lead">Phone Number</p>
+              <p>(+1) 335 204 4456</p>
+            </div>
+          </div>
+          <div class="contact-info__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.3763881916434!2d-74.00316962361143!3d40.73174273640627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259915ff66df1%3A0xc57f0673c47f1164!2s340%206th%20Ave%2C%20New%20York%2C%20NY%2010011%2C%20USA!5e0!3m2!1sen!2s!4v1723692417022!5m2!1sen!2s"
+              width="100%"
+              height="225"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form class="contact-form__form">
+          <div class="contact-form__form__group">
+            <input
+              class="textfield"
+              type="text"
+              name="firstname"
+              placeholder="First Name"
+            />
+            <input
+              class="textfield"
+              type="text"
+              name="lastname"
+              placeholder="Last Name"
+            />
+          </div>
+          <div class="contact-form__form__group">
+            <input
+              class="textfield"
+              type="email"
+              name="email"
+              placeholder="Email"
+            />
+          </div>
+          <div class="contact-form__form__group">
+            <textarea
+              class="textfield textfield--textarea"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <button class="btn">Send</button>
+        </form>
+      </div>
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+      <h3>Brewlecious Cafe</h3>
+      <div class="footer__content">
+        <div class="footer__content__col">
+          <p>
+            Proudly serving our loyal customers since 2001, we are present in
+            over 12 states across the USA, with our headquarters located in New
+            York.
+          </p>
+          <div class="flex-wrap">
+            <p><i data-feather="clock"></i></p>
+            <p>Mon - Sun, 7AM to 11PM</p>
+          </div>
+          <div class="flex-wrap">
+            <p><i data-feather="phone"></i></p>
+            <p>(+1) 335 204 4456</p>
+          </div>
+          <div class="flex-wrap">
+            <button class="icon-button">
+              <i data-feather="facebook"></i>
+            </button>
+            <button class="icon-button">
+              <i data-feather="instagram"></i>
+            </button>
+            <button class="icon-button">
+              <i data-feather="twitter"></i>
+            </button>
+          </div>
+        </div>
+        <div class="footer__content__col">
+          <h4>Useful Links</h4>
+          <ul class="navlinks">
+            <li><a href="">Home</a></li>
+            <li><a href="">Cafe</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__content__col">
+          <h4>Subscribe to our newsletter for daily deals and promotions!</h4>
+          <input
+            class="textfield"
+            type="email"
+            name="email"
+            placeholder="Your Email"
+          />
+        </div>
+      </div>
+      <div class="footer__secondary-links">
+        <ul class="navlinks">
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <div class="copyright-text">
+        <p>&copy; Brewlecious Cafe 2001 - 2024. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+  </body>
+</html>

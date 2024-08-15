@@ -461,13 +461,6 @@ footer.footer {
   max-width: 540px;
 }
 
-.footer .footer__content__col input {
-  height: 48px;
-  padding: 24px 16px;
-  border-radius: 4px;
-  font-size: 1.6rem;
-}
-
 /*
 ** ** ============================================================================
 ** ** ** COMPONENTS
@@ -605,6 +598,21 @@ div.circle-item {
   fill: var(--color-tertiary);
   stroke: var(--color);
   stroke-width: 1px;
+}
+
+/*
+** Textfield
+*/
+.textfield {
+  height: 48px;
+  padding: 24px 16px;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  border: none;
+}
+
+.textfield--textarea {
+  height: 300px;
 }
 
 /*
@@ -980,4 +988,55 @@ section.why-us {
 .why-us__list {
   display: flex;
   justify-content: space-between;
+}
+
+/*
+** ** ============================================================================
+** ** ** Contact Page
+** ** ============================================================================
+*/
+main.main--contact {
+  padding: 260px 48px 120px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 180px;
+}
+
+.contact-info,
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-info__wrapper {
+  display: flex;
+}
+
+.contact-info__details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 0 1 600px;
+}
+
+.contact-info__map {
+  flex: 1;
+}
+
+.contact-form__form {
+  max-width: calc(100% - 600px);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form__form__group {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.contact-form__form__group > * {
+  flex: 1;
 }
