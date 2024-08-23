@@ -854,10 +854,7 @@ section.best-coffee {
 ** ** ============================================================================
 */
 main.main--cafe {
-  --offeset: 340px;
-  width: calc(100% - var(--offeset));
-  height: 315%;
-  margin-left: var(--offeset);
+  flex: 1;
   padding: 224px 48px;
   display: flex;
   flex-direction: column;
@@ -865,8 +862,7 @@ main.main--cafe {
 }
 
 aside.aside {
-  width: 340px;
-  height: 315%;
+  flex: 0 0 340px;
   background: var(--color-secondary);
   color: var(--color-primary);
   margin-top: 155px;
@@ -927,6 +923,12 @@ aside.aside {
 ** ** ** About Page
 ** ** ============================================================================
 */
+div.container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
 main.main--about {
   --space: 140px;
   height: 225%;
